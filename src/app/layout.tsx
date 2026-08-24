@@ -7,11 +7,11 @@ import { Navbar } from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://subhm.in"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://am.subhm.in"),
   title: "Subhankar Mondal",
   description: "Hi I am Subhankar! Developer and Founder at Zernode.",
   alternates: {
-    canonical: "https://subhm.in",
+    canonical: "./",
   },
   icons: {
     icon: "/favicon.png",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Subhankar Mondal",
     description: "Hi I am Subhankar! Developer and Founder at Zernode.",
-    url: "https://subhm.in",
+    url: "https://am.subhm.in",
     siteName: "Subhankar Mondal",
     locale: "en_US",
     type: "website",
