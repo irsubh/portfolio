@@ -74,7 +74,7 @@ export function Navbar() {
             title="GitHub Profile"
           >
             <a
-              href="https://link.subhm.in/gh"
+              href="https://subhm.in/gh"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"

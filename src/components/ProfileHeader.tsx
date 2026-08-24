@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -8,8 +8,6 @@ import {
   CheckCircle2, 
   Github, 
   Linkedin, 
-  Mail, 
-  Check,
   ArrowUpRight
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -53,14 +51,6 @@ interface ProfileHeaderProps {
 }
 
 export function ProfileHeader({ initialContributions = [] }: ProfileHeaderProps) {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText("contact@subhm.in");
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
   return (
     <motion.div
       variants={containerVariants}
@@ -128,7 +118,7 @@ export function ProfileHeader({ initialContributions = [] }: ProfileHeaderProps)
               title="X Profile (@amsubhm)"
             >
               <a
-                href="https://link.subhm.in/x"
+                href="https://subhm.in/x"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="X Profile"
@@ -146,7 +136,7 @@ export function ProfileHeader({ initialContributions = [] }: ProfileHeaderProps)
               title="GitHub (@amsubhm)"
             >
               <a
-                href="https://link.subhm.in/gh"
+                href="https://subhm.in/gh"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub Profile"
@@ -164,29 +154,13 @@ export function ProfileHeader({ initialContributions = [] }: ProfileHeaderProps)
               title="LinkedIn (@amsubhm)"
             >
               <a
-                href="https://link.subhm.in/in"
+                href="https://subhm.in/in"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn Profile"
               >
                 <Linkedin className="w-4 h-4" />
               </a>
-            </Button>
-
-            {/* Contact Email */}
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={handleCopyEmail}
-              className="w-8 h-8 border-border hover:bg-accent text-foreground shadow-xs"
-              title={copied ? "Email Copied!" : "Copy Email (contact@subhm.in)"}
-              aria-label="Contact Email"
-            >
-              {copied ? (
-                <Check className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-              ) : (
-                <Mail className="w-4 h-4" />
-              )}
             </Button>
           </div>
         </motion.div>
