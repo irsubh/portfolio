@@ -72,7 +72,7 @@ export function GithubBannerChart({
   };
 
   return (
-    <div className="absolute inset-0 overflow-hidden flex items-center justify-center p-0 pointer-events-none select-none [mask-image:linear-gradient(to_right,transparent_0%,black_4%,black_96%,transparent_100%)]">
+    <div className="absolute inset-0 overflow-hidden flex items-center justify-end p-0 pointer-events-none select-none [mask-image:linear-gradient(to_right,transparent_0%,black_8%,black_100%)]">
       <div className="flex items-center gap-[3px] sm:gap-[3.5px]">
         {columns.map((col, colIdx) => (
           <div key={colIdx} className="flex flex-col gap-[3px] sm:gap-[3.5px]">
@@ -97,9 +97,6 @@ export function GithubBannerChart({
 
       {/* Left subtle soft fade */}
       <div className="absolute inset-y-0 left-0 w-8 sm:w-12 bg-gradient-to-r from-background via-background/40 to-transparent pointer-events-none" />
-
-      {/* Right subtle soft fade */}
-      <div className="absolute inset-y-0 right-0 w-8 sm:w-12 bg-gradient-to-l from-background via-background/40 to-transparent pointer-events-none" />
     </div>
   );
 }
