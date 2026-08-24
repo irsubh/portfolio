@@ -22,7 +22,7 @@ export function AboutSection() {
     <motion.section
       id="about"
       variants={subtleFadeVariants}
-      initial="hidden"
+      initial={false}
       animate="visible"
       className="px-4 sm:px-8 py-8 sm:py-9 border-b border-border space-y-5"
     >
