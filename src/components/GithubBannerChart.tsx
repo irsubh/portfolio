@@ -72,8 +72,8 @@ export function GithubBannerChart({
   };
 
   return (
-    <div className="absolute inset-0 overflow-hidden flex items-center justify-end p-0 pointer-events-none select-none [mask-image:linear-gradient(to_right,transparent_0%,black_8%,black_100%)]">
-      <div className="flex items-center gap-[3px] sm:gap-[3.5px]">
+    <div className="absolute inset-0 overflow-hidden flex items-center justify-end p-0 pointer-events-none select-none [mask-image:linear-gradient(to_right,transparent_0%,black_2%,black_100%)]">
+      <div className="flex items-center gap-[3px] sm:gap-[3.5px] translate-x-[14px] sm:translate-x-[17.5px]">
         {columns.map((col, colIdx) => (
           <div key={colIdx} className="flex flex-col gap-[3px] sm:gap-[3.5px]">
             {col.map((day, dayIdx) => (
@@ -96,7 +96,10 @@ export function GithubBannerChart({
       <div className="absolute inset-x-0 bottom-0 h-6 sm:h-8 bg-gradient-to-t from-background via-background/40 to-transparent pointer-events-none" />
 
       {/* Left subtle soft fade */}
-      <div className="absolute inset-y-0 left-0 w-8 sm:w-12 bg-gradient-to-r from-background via-background/40 to-transparent pointer-events-none" />
+      <div className="absolute inset-y-0 left-0 w-3 sm:w-4 bg-gradient-to-r from-background via-background/40 to-transparent pointer-events-none" />
+
+      {/* Right subtle soft fade */}
+      <div className="absolute inset-y-0 right-0 w-3 sm:w-4 bg-gradient-to-l from-background via-background/40 to-transparent pointer-events-none" />
     </div>
   );
 }
