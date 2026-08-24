@@ -54,7 +54,7 @@ export function ProfileHeader({ initialContributions = [] }: ProfileHeaderProps)
   return (
     <motion.div
       variants={containerVariants}
-      initial="hidden"
+      initial={false}
       animate="visible"
       className="w-full relative"
     >
