@@ -48,7 +48,18 @@ export function GithubBannerChart({
 
   contributions.forEach((day, index) => {
     currentColumn.push(day);
-    if (currentColumn.length === 7 || index === contributions.length - 1) {
+    if (currentColumn.length === 7) {
+      columns.push(currentColumn);
+      currentColumn = [];
+    } else if (index === contributions.length - 1) {
+      // Pad remaining days of the current week with blank level-0 dots so the column is always a complete 7-day line
+      while (currentColumn.length < 7) {
+        currentColumn.push({
+          date: "",
+          count: 0,
+          level: 0,
+        });
+      }
       columns.push(currentColumn);
       currentColumn = [];
     }
@@ -82,7 +93,7 @@ export function GithubBannerChart({
                 className={`w-[10.5px] h-[10.5px] sm:w-[13.5px] sm:h-[13.5px] rounded-[1.5px] border ${getCellClass(
                   day.level
                 )}`}
-                title={`${day.date}: ${day.count} contributions`}
+                title={day.date ? `${day.date}: ${day.count} contributions` : undefined}
               />
             ))}
           </div>
