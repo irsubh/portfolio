@@ -192,16 +192,8 @@ export function ProfileHeader({ initialContributions = [] }: ProfileHeaderProps)
           >
             nodezed.com
             <ArrowUpRight className="w-3.5 h-3.5" />
-          </a>{" "}
-          <span className="hidden md:inline">
-            — enabling developers and businesses to deploy scalable cloud infrastructure in a single click.
-          </span>
-          <span className="hidden sm:inline md:hidden">
-            — single-click cloud infrastructure for developers and businesses.
-          </span>
-          <span className="inline sm:hidden">
-            — 1-click cloud infrastructure for developers & businesses.
-          </span>
+          </a>
+          {", enabling developers and businesses to deploy scalable cloud infrastructure in a single click."}
         </motion.p>
       </div>
     </motion.div>
