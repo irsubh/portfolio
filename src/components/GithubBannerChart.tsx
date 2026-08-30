@@ -108,6 +108,9 @@ export function GithubBannerChart({
 
       {/* Left subtle soft fade */}
       <div className="absolute inset-y-0 left-0 w-6 sm:w-10 bg-gradient-to-r from-background via-background/40 to-transparent pointer-events-none" />
+
+      {/* Right subtle soft fade */}
+      <div className="absolute inset-y-0 right-0 w-3 sm:w-5 bg-gradient-to-l from-background via-background/40 to-transparent pointer-events-none" />
     </div>
   );
 }
