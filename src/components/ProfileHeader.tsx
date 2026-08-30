@@ -183,14 +183,14 @@ export function ProfileHeader({ initialContributions = [] }: ProfileHeaderProps)
           variants={subtleItemVariants}
           className="text-sm sm:text-base text-foreground/90 leading-relaxed max-w-2xl font-normal"
         >
-          Founder & Developer building{" "}
+          Founder & CEO at{" "}
           <a
             href="https://nodezed.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground font-semibold hover:underline inline-flex items-center gap-0.5"
           >
-            nodezed.com
+            Nodezed
             <ArrowUpRight className="w-3.5 h-3.5" />
           </a>
           {", enabling developers and businesses to deploy scalable cloud infrastructure in a single click."}

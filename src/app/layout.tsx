@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://am.subhm.in"),
   title: "Subhankar Mondal",
-  description: "Hi I am Subhankar! Developer and Founder at Nodezed.",
+  description: "Hi I am Subhankar! Founder & CEO at Nodezed.",
   alternates: {
     canonical: "./",
   },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
   openGraph: {
     title: "Subhankar Mondal",
-    description: "Hi I am Subhankar! Developer and Founder at Nodezed.",
+    description: "Hi I am Subhankar! Founder & CEO at Nodezed.",
     url: "https://am.subhm.in",
     siteName: "Subhankar Mondal",
     locale: "en_US",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Subhankar Mondal",
-    description: "Hi I am Subhankar! Developer and Founder at Nodezed.",
+    description: "Hi I am Subhankar! Founder & CEO at Nodezed.",
     creator: "@amsubhm",
     images: ["/og.png"],
   },
