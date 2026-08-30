@@ -185,12 +185,12 @@ export function ProfileHeader({ initialContributions = [] }: ProfileHeaderProps)
         >
           Founder & Developer building{" "}
           <a
-            href="https://zernode.com"
+            href="https://nodezed.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground font-semibold hover:underline inline-flex items-center gap-0.5"
           >
-            zernode.com
+            nodezed.com
             <ArrowUpRight className="w-3.5 h-3.5" />
           </a>{" "}
           <span className="hidden md:inline">

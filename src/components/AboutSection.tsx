@@ -43,19 +43,19 @@ export function AboutSection() {
             &ldquo;Hi, I&apos;m <span className="font-semibold text-foreground">Subhankar Mondal</span>. My software engineering journey began back in 2021 driven by a passion for building scalable web systems. Over the years, I coded and deployed numerous applications and tools. While many of those early experiments never blew up, each build was an invaluable masterclass that refined my technical craft and engineering discipline.&rdquo;
           </p>
 
-          {/* Paragraph 2: The Vision for Zernode */}
+          {/* Paragraph 2: The Vision for Nodezed */}
           <p className="text-[15px] sm:text-base leading-relaxed text-foreground font-normal">
             &ldquo;Today, all my energy and focus are poured into building{" "}
             <a
-              href="https://zernode.com"
+              href="https://nodezed.com"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-foreground underline underline-offset-4 decoration-foreground/40 hover:decoration-foreground inline-flex items-center gap-0.5"
             >
-              Zernode
+              Nodezed
               <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
-            . We are solving a bottleneck every builder encounters: deploying cloud infrastructure shouldn&apos;t require wrestling with complex DevOps configurations. Zernode enables developers and businesses to launch and manage scalable cloud systems in a single click.&rdquo;
+            . We are solving a bottleneck every builder encounters: deploying cloud infrastructure shouldn&apos;t require wrestling with complex DevOps configurations. Nodezed enables developers and businesses to launch and manage scalable cloud systems in a single click.&rdquo;
           </p>
 
           {/* Paragraph 3: The Monochrome Philosophy */}
@@ -71,16 +71,16 @@ export function AboutSection() {
             &ldquo;Hi, I&apos;m <span className="font-semibold text-foreground">Subhankar Mondal</span>. My software journey began in 2021. Over the years, I coded and shipped dozens of applications and systems. While none blew up, each project refined my craft and taught me resilience.&rdquo;
           </p>
 
-          {/* Paragraph 2: Zernode */}
+          {/* Paragraph 2: Nodezed */}
           <p className="text-[14px] leading-relaxed text-foreground font-normal">
             &ldquo;Today, all my energy is focused on building{" "}
             <a
-              href="https://zernode.com"
+              href="https://nodezed.com"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-foreground underline underline-offset-4 decoration-foreground/40 hover:decoration-foreground inline-flex items-center gap-0.5"
             >
-              Zernode
+              Nodezed
               <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
             . We&apos;re removing DevOps friction—enabling developers and businesses to launch and scale automated cloud infrastructure in a single click.&rdquo;
